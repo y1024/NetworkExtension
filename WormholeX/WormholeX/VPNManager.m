@@ -156,6 +156,10 @@ NSString *const kProxyServiceVPNStatusNotification = @"kProxyServiceVPNStatusNot
         case NEVPNStatusInvalid:
             self.status = off;
             break;
+        case NEVPNStatusDisconnected:
+            self.status = off;
+            break;
+
         default:
             break;
     }
@@ -183,21 +187,22 @@ NSString *const kProxyServiceVPNStatusNotification = @"kProxyServiceVPNStatusNot
  @return 默认线路配置
  */
 - (NSDictionary*)defaultProviderConfiguration {
+    
     return @{
-             @"ss_address":@"url",
-             @"ss_port":@(443),
+             @"ss_address":@"207.226.141.146",
+             @"ss_port":@(8888),
              @"ss_method":@"AES256CFB",
-             @"ss_password":@"pal5u6R2345u",
+             @"ss_password":@"Jir5k141k",
              @"ymal_conf":[self defaultRule],
              };
 }
 
 + (NSDictionary*)statusLocalizedDescriptionInfo {
     NSDictionary *info = @{
-                           @(off):@"off",
+                           @(off):@"Connect",
                            @(connecting):@"connecting",
-                           @(on):@"on",
-                           @(disconnecting):@"disconnecting",
+                           @(on):@"Disconnect",
+                           @(disconnecting):@"disconnect",
                            };
     return info;
 }

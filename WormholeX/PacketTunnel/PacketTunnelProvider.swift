@@ -40,7 +40,7 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
         let ss_adder = conf["ss_address"] as! String
         NSLog(ss_adder)
         
-        let ss_port = conf["ss_port"] as! Int
+        let ss_port = (conf["ss_port"] as! NSNumber).intValue
         let method = conf["ss_method"] as! String
         NSLog(method)
         

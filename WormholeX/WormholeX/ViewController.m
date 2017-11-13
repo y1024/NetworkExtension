@@ -52,6 +52,14 @@
     _status = status;
     NSDictionary *info = [VPNManager statusLocalizedDescriptionInfo];
     [self.connectButton setTitle:info[@(status)] forState:normal];
+    /*
+    if (status == on ||
+        status == off) {
+        self.connectButton.userInteractionEnabled = true;
+    }else {
+        self.connectButton.userInteractionEnabled = false;
+    }
+    */
 }
 
 #pragma mark lazy load
