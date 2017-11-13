@@ -1,0 +1,13 @@
+{
+  "commitish" : "0.6.1",
+  "iOS" : [
+    {
+      "name" : "tun2socks",
+      "hash" : "d753d017049b95e1437b83a53e0b9807005f80eef244634722a27775aa304840"
+    },
+    {
+      "name" : "lwip",
+      "hash" : "3d1052cf588b45cede73a9745972ab7142ac7a8d993ad862a98fdd7f9f9fc6c3"
+    }
+  ]
+}
