@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D72E4A9B54B4089F16DE5EE /* libPods-PacketTunnel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D799D7C609DFA206DF2ABA9F /* libPods-PacketTunnel.a */; };
+		5205B0641FBA954600A3BF5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B0631FBA954600A3BF5A /* AppDelegate.m */; };
+		5205B0671FBA954600A3BF5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B0661FBA954600A3BF5A /* ViewController.m */; };
+		5205B06A1FBA954600A3BF5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205B0681FBA954600A3BF5A /* Main.storyboard */; };
+		5205B06C1FBA954600A3BF5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5205B06B1FBA954600A3BF5A /* Assets.xcassets */; };
+		5205B06F1FBA954600A3BF5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5205B06D1FBA954600A3BF5A /* LaunchScreen.storyboard */; };
+		5205B0721FBA954600A3BF5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B0711FBA954600A3BF5A /* main.m */; };
+		5205B0821FBA95B300A3BF5A /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B0811FBA95B300A3BF5A /* PacketTunnelProvider.m */; };
+		5205B0861FBA95B300A3BF5A /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5205B07C1FBA95B300A3BF5A /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5205B08D1FBA961300A3BF5A /* VPNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B08B1FBA961200A3BF5A /* VPNManager.m */; };
+		5205B0901FBA964800A3BF5A /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 5205B08F1FBA964700A3BF5A /* NEKitRule.conf */; };
+		5205B0931FBA965900A3BF5A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5205B0921FBA965900A3BF5A /* NetworkExtension.framework */; };
+		5205B0951FBA966300A3BF5A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5205B0921FBA965900A3BF5A /* NetworkExtension.framework */; };
+		916DA8C4BDD36CD0F2DE29C3 /* libPods-WormholeX-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39646CFE2108DCE4749B19EA /* libPods-WormholeX-Objc.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5205B0841FBA95B300A3BF5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5205B0571FBA954600A3BF5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5205B07B1FBA95B300A3BF5A;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5205B08A1FBA95B300A3BF5A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5205B0861FBA95B300A3BF5A /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		375BF1873FB5A7D9FA50436A /* Pods-PacketTunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		39646CFE2108DCE4749B19EA /* libPods-WormholeX-Objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WormholeX-Objc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E76D4CCA9541169BFB2E8A8 /* Pods-WormholeX-Objc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WormholeX-Objc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WormholeX-Objc/Pods-WormholeX-Objc.debug.xcconfig"; sourceTree = "<group>"; };
+		4E8B203AC7C0223EB8E5B074 /* Pods-WormholeX-Objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WormholeX-Objc.release.xcconfig"; path = "Pods/Target Support Files/Pods-WormholeX-Objc/Pods-WormholeX-Objc.release.xcconfig"; sourceTree = "<group>"; };
+		5205B05F1FBA954600A3BF5A /* WormholeX-Objc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WormholeX-Objc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205B0621FBA954600A3BF5A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5205B0631FBA954600A3BF5A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5205B0651FBA954600A3BF5A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5205B0661FBA954600A3BF5A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5205B0691FBA954600A3BF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5205B06B1FBA954600A3BF5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5205B06E1FBA954600A3BF5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5205B0701FBA954600A3BF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205B0711FBA954600A3BF5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5205B07C1FBA95B300A3BF5A /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5205B07F1FBA95B300A3BF5A /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		5205B0801FBA95B300A3BF5A /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		5205B0811FBA95B300A3BF5A /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		5205B0831FBA95B300A3BF5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5205B08B1FBA961200A3BF5A /* VPNManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNManager.m; sourceTree = "<group>"; };
+		5205B08C1FBA961200A3BF5A /* VPNManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNManager.h; sourceTree = "<group>"; };
+		5205B08F1FBA964700A3BF5A /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
+		5205B0921FBA965900A3BF5A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		5205B0941FBA965900A3BF5A /* WormholeX-Objc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WormholeX-Objc.entitlements"; sourceTree = "<group>"; };
+		C514E2B8E07B2201292E887B /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
+		D799D7C609DFA206DF2ABA9F /* libPods-PacketTunnel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PacketTunnel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5205B05C1FBA954600A3BF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205B0931FBA965900A3BF5A /* NetworkExtension.framework in Frameworks */,
+				916DA8C4BDD36CD0F2DE29C3 /* libPods-WormholeX-Objc.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205B0791FBA95B300A3BF5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205B0951FBA966300A3BF5A /* NetworkExtension.framework in Frameworks */,
+				1D72E4A9B54B4089F16DE5EE /* libPods-PacketTunnel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26E2DE88AD3C95D14C661483 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				375BF1873FB5A7D9FA50436A /* Pods-PacketTunnel.debug.xcconfig */,
+				C514E2B8E07B2201292E887B /* Pods-PacketTunnel.release.xcconfig */,
+				4E76D4CCA9541169BFB2E8A8 /* Pods-WormholeX-Objc.debug.xcconfig */,
+				4E8B203AC7C0223EB8E5B074 /* Pods-WormholeX-Objc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5205B0561FBA954600A3BF5A = {
+			isa = PBXGroup;
+			children = (
+				5205B0611FBA954600A3BF5A /* WormholeX-Objc */,
+				5205B07D1FBA95B300A3BF5A /* PacketTunnel */,
+				5205B0601FBA954600A3BF5A /* Products */,
+				5205B0911FBA965900A3BF5A /* Frameworks */,
+				26E2DE88AD3C95D14C661483 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5205B0601FBA954600A3BF5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5205B05F1FBA954600A3BF5A /* WormholeX-Objc.app */,
+				5205B07C1FBA95B300A3BF5A /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5205B0611FBA954600A3BF5A /* WormholeX-Objc */ = {
+			isa = PBXGroup;
+			children = (
+				5205B0941FBA965900A3BF5A /* WormholeX-Objc.entitlements */,
+				5205B0621FBA954600A3BF5A /* AppDelegate.h */,
+				5205B0631FBA954600A3BF5A /* AppDelegate.m */,
+				5205B0651FBA954600A3BF5A /* ViewController.h */,
+				5205B0661FBA954600A3BF5A /* ViewController.m */,
+				5205B08C1FBA961200A3BF5A /* VPNManager.h */,
+				5205B08B1FBA961200A3BF5A /* VPNManager.m */,
+				5205B08E1FBA964700A3BF5A /* Supporting Files */,
+				5205B0681FBA954600A3BF5A /* Main.storyboard */,
+				5205B06B1FBA954600A3BF5A /* Assets.xcassets */,
+				5205B06D1FBA954600A3BF5A /* LaunchScreen.storyboard */,
+				5205B0701FBA954600A3BF5A /* Info.plist */,
+				5205B0711FBA954600A3BF5A /* main.m */,
+			);
+			path = "WormholeX-Objc";
+			sourceTree = "<group>";
+		};
+		5205B07D1FBA95B300A3BF5A /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				5205B0801FBA95B300A3BF5A /* PacketTunnelProvider.h */,
+				5205B0811FBA95B300A3BF5A /* PacketTunnelProvider.m */,
+				5205B0831FBA95B300A3BF5A /* Info.plist */,
+				5205B07E1FBA95B300A3BF5A /* Supporting Files */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		5205B07E1FBA95B300A3BF5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5205B07F1FBA95B300A3BF5A /* PacketTunnel.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5205B08E1FBA964700A3BF5A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5205B08F1FBA964700A3BF5A /* NEKitRule.conf */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5205B0911FBA965900A3BF5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5205B0921FBA965900A3BF5A /* NetworkExtension.framework */,
+				D799D7C609DFA206DF2ABA9F /* libPods-PacketTunnel.a */,
+				39646CFE2108DCE4749B19EA /* libPods-WormholeX-Objc.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5205B05E1FBA954600A3BF5A /* WormholeX-Objc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205B0751FBA954700A3BF5A /* Build configuration list for PBXNativeTarget "WormholeX-Objc" */;
+			buildPhases = (
+				AC2C4193E1AE59C07BC46032 /* [CP] Check Pods Manifest.lock */,
+				5205B05B1FBA954600A3BF5A /* Sources */,
+				5205B05C1FBA954600A3BF5A /* Frameworks */,
+				5205B05D1FBA954600A3BF5A /* Resources */,
+				5205B08A1FBA95B300A3BF5A /* Embed App Extensions */,
+				374B6A0D640FBE76CC250A77 /* [CP] Embed Pods Frameworks */,
+				74C745E4F3D29ACB255C5B3E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5205B0851FBA95B300A3BF5A /* PBXTargetDependency */,
+			);
+			name = "WormholeX-Objc";
+			productName = "WormholeX-Objc";
+			productReference = 5205B05F1FBA954600A3BF5A /* WormholeX-Objc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5205B07B1FBA95B300A3BF5A /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5205B0871FBA95B300A3BF5A /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				FB938270538A5097DB404575 /* [CP] Check Pods Manifest.lock */,
+				5205B0781FBA95B300A3BF5A /* Sources */,
+				5205B0791FBA95B300A3BF5A /* Frameworks */,
+				5205B07A1FBA95B300A3BF5A /* Resources */,
+				CA1084BD2B7B1054217BE8FB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 5205B07C1FBA95B300A3BF5A /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5205B0571FBA954600A3BF5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "杜晓星";
+				TargetAttributes = {
+					5205B05E1FBA954600A3BF5A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+					5205B07B1FBA95B300A3BF5A = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+							com.apple.VPNLite = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5205B05A1FBA954600A3BF5A /* Build configuration list for PBXProject "WormholeX-Objc" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5205B0561FBA954600A3BF5A;
+			productRefGroup = 5205B0601FBA954600A3BF5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5205B05E1FBA954600A3BF5A /* WormholeX-Objc */,
+				5205B07B1FBA95B300A3BF5A /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5205B05D1FBA954600A3BF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205B06F1FBA954600A3BF5A /* LaunchScreen.storyboard in Resources */,
+				5205B0901FBA964800A3BF5A /* NEKitRule.conf in Resources */,
+				5205B06C1FBA954600A3BF5A /* Assets.xcassets in Resources */,
+				5205B06A1FBA954600A3BF5A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205B07A1FBA95B300A3BF5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		374B6A0D640FBE76CC250A77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WormholeX-Objc/Pods-WormholeX-Objc-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74C745E4F3D29ACB255C5B3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WormholeX-Objc/Pods-WormholeX-Objc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2C4193E1AE59C07BC46032 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1084BD2B7B1054217BE8FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB938270538A5097DB404575 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5205B05B1FBA954600A3BF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205B0671FBA954600A3BF5A /* ViewController.m in Sources */,
+				5205B0721FBA954600A3BF5A /* main.m in Sources */,
+				5205B08D1FBA961300A3BF5A /* VPNManager.m in Sources */,
+				5205B0641FBA954600A3BF5A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205B0781FBA95B300A3BF5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5205B0821FBA95B300A3BF5A /* PacketTunnelProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5205B0851FBA95B300A3BF5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5205B07B1FBA95B300A3BF5A /* PacketTunnel */;
+			targetProxy = 5205B0841FBA95B300A3BF5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5205B0681FBA954600A3BF5A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5205B0691FBA954600A3BF5A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5205B06D1FBA954600A3BF5A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5205B06E1FBA954600A3BF5A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5205B0731FBA954700A3BF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5205B0741FBA954700A3BF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5205B0761FBA954700A3BF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E76D4CCA9541169BFB2E8A8 /* Pods-WormholeX-Objc.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "WormholeX-Objc/WormholeX-Objc.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 89W3NN7QAB;
+				INFOPLIST_FILE = "WormholeX-Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.WormholeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "94aeb3cd-5e7b-42ee-8079-d356d7ba2ffa";
+				PROVISIONING_PROFILE_SPECIFIER = dev_WormholeX;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5205B0771FBA954700A3BF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E8B203AC7C0223EB8E5B074 /* Pods-WormholeX-Objc.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "WormholeX-Objc/WormholeX-Objc.entitlements";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "WormholeX-Objc/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.WormholeX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5205B0881FBA95B300A3BF5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375BF1873FB5A7D9FA50436A /* Pods-PacketTunnel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 89W3NN7QAB;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.WormholeX.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5d6e3b5f-2757-4309-9113-e8b3f6c6cd48";
+				PROVISIONING_PROFILE_SPECIFIER = dev_PacketTunnel;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5205B0891FBA95B300A3BF5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C514E2B8E07B2201292E887B /* Pods-PacketTunnel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.WormholeX.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5205B05A1FBA954600A3BF5A /* Build configuration list for PBXProject "WormholeX-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205B0731FBA954700A3BF5A /* Debug */,
+				5205B0741FBA954700A3BF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205B0751FBA954700A3BF5A /* Build configuration list for PBXNativeTarget "WormholeX-Objc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205B0761FBA954700A3BF5A /* Debug */,
+				5205B0771FBA954700A3BF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5205B0871FBA95B300A3BF5A /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5205B0881FBA95B300A3BF5A /* Debug */,
+				5205B0891FBA95B300A3BF5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5205B0571FBA954600A3BF5A /* Project object */;
+}

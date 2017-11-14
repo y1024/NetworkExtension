@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  WormholeX
+//  WormholeX-Objc
 //
-//  Created by 杜晓星 on 2017/11/13.
+//  Created by 杜晓星 on 2017/11/14.
 //  Copyright © 2017年 杜晓星. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @property (nonatomic,strong)VPNManager *vpnManager;
 @property (nonatomic,assign)VPNManagerStatus status;
+
 
 @end
 
@@ -70,6 +71,5 @@
     }
     return _vpnManager;
 }
-
 
 @end
