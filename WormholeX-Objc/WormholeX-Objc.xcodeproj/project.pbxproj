@@ -20,6 +20,8 @@
 		5205B0901FBA964800A3BF5A /* NEKitRule.conf in Resources */ = {isa = PBXBuildFile; fileRef = 5205B08F1FBA964700A3BF5A /* NEKitRule.conf */; };
 		5205B0931FBA965900A3BF5A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5205B0921FBA965900A3BF5A /* NetworkExtension.framework */; };
 		5205B0951FBA966300A3BF5A /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5205B0921FBA965900A3BF5A /* NetworkExtension.framework */; };
+		5205B0BB1FBA9E7000A3BF5A /* dns-objc.m in Sources */ = {isa = PBXBuildFile; fileRef = 5205B0BA1FBA9E7000A3BF5A /* dns-objc.m */; };
+		5205B0BC1FBA9ED600A3BF5A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5205B09A1FBA9C8C00A3BF5A /* libresolv.tbd */; };
 		916DA8C4BDD36CD0F2DE29C3 /* libPods-WormholeX-Objc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39646CFE2108DCE4749B19EA /* libPods-WormholeX-Objc.a */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,16 @@
 				5205B0861FBA95B300A3BF5A /* PacketTunnel.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5205B0AD1FBA9D2700A3BF5A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -72,6 +84,9 @@
 		5205B08F1FBA964700A3BF5A /* NEKitRule.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NEKitRule.conf; sourceTree = "<group>"; };
 		5205B0921FBA965900A3BF5A /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		5205B0941FBA965900A3BF5A /* WormholeX-Objc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WormholeX-Objc.entitlements"; sourceTree = "<group>"; };
+		5205B09A1FBA9C8C00A3BF5A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		5205B0B91FBA9E7000A3BF5A /* dns-objc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dns-objc.h"; sourceTree = "<group>"; };
+		5205B0BA1FBA9E7000A3BF5A /* dns-objc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "dns-objc.m"; sourceTree = "<group>"; };
 		C514E2B8E07B2201292E887B /* Pods-PacketTunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PacketTunnel.release.xcconfig"; path = "Pods/Target Support Files/Pods-PacketTunnel/Pods-PacketTunnel.release.xcconfig"; sourceTree = "<group>"; };
 		D799D7C609DFA206DF2ABA9F /* libPods-PacketTunnel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PacketTunnel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5205B0BC1FBA9ED600A3BF5A /* libresolv.tbd in Frameworks */,
 				5205B0951FBA966300A3BF5A /* NetworkExtension.framework in Frameworks */,
 				1D72E4A9B54B4089F16DE5EE /* libPods-PacketTunnel.a in Frameworks */,
 			);
@@ -154,6 +170,8 @@
 			children = (
 				5205B0801FBA95B300A3BF5A /* PacketTunnelProvider.h */,
 				5205B0811FBA95B300A3BF5A /* PacketTunnelProvider.m */,
+				5205B0B91FBA9E7000A3BF5A /* dns-objc.h */,
+				5205B0BA1FBA9E7000A3BF5A /* dns-objc.m */,
 				5205B0831FBA95B300A3BF5A /* Info.plist */,
 				5205B07E1FBA95B300A3BF5A /* Supporting Files */,
 			);
@@ -179,6 +197,7 @@
 		5205B0911FBA965900A3BF5A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5205B09A1FBA9C8C00A3BF5A /* libresolv.tbd */,
 				5205B0921FBA965900A3BF5A /* NetworkExtension.framework */,
 				D799D7C609DFA206DF2ABA9F /* libPods-PacketTunnel.a */,
 				39646CFE2108DCE4749B19EA /* libPods-WormholeX-Objc.a */,
@@ -200,6 +219,7 @@
 				5205B08A1FBA95B300A3BF5A /* Embed App Extensions */,
 				374B6A0D640FBE76CC250A77 /* [CP] Embed Pods Frameworks */,
 				74C745E4F3D29ACB255C5B3E /* [CP] Copy Pods Resources */,
+				5205B0AD1FBA9D2700A3BF5A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,6 +423,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5205B0821FBA95B300A3BF5A /* PacketTunnelProvider.m in Sources */,
+				5205B0BB1FBA9E7000A3BF5A /* dns-objc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +605,19 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 89W3NN7QAB;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEBUG=1",
+					BADVPN_BREACTOR_BADVPN,
+					BADVPN_FREEBSD,
+					BADVPN_THREADWORK_USE_PTHREAD,
+					"BADVPN_THREAD_SAFE=1",
+					BADVPN_USE_KEVENT,
+					BADVPN_USE_SYSLOG,
+					BADVPN_LITTLE_ENDIAN,
+					BADVPN_LIBTSOCKS,
+				);
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -593,6 +627,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = dev_PacketTunnel;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/custom\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv4\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv6\"";
 			};
 			name = Debug;
 		};
@@ -603,6 +638,18 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					BADVPN_BREACTOR_BADVPN,
+					BADVPN_FREEBSD,
+					BADVPN_THREADWORK_USE_PTHREAD,
+					"BADVPN_THREAD_SAFE=1",
+					BADVPN_USE_KEVENT,
+					BADVPN_USE_SYSLOG,
+					BADVPN_LITTLE_ENDIAN,
+					BADVPN_LIBTSOCKS,
+				);
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -611,6 +658,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/custom\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv4\" \"$(SRCROOT)/$(TARGET_NAME)/tun2socks-iOS/lwip/src/include/ipv6\"";
 			};
 			name = Release;
 		};

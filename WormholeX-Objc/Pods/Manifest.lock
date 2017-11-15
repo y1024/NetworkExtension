@@ -1,3 +1,17 @@
-PODFILE CHECKSUM: a3794aeaf8e9bfed809de053f27416811d6b4d3c
+PODS:
+  - CocoaAsyncSocket (7.6.1)
+  - ZXingObjC (3.2.1):
+    - ZXingObjC/All (= 3.2.1)
+  - ZXingObjC/All (3.2.1)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.6.1)
+  - ZXingObjC (~> 3.2.1)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 7eadd3f59e1a6c84e2aefc93e9ff7b55156fe174
+  ZXingObjC: bbf7b8f0cf8933fdd33eb4f9f46e22308552869b
+
+PODFILE CHECKSUM: 96774ad1dfcf00dd2a404d2dac43c870c9a893f4
 
 COCOAPODS: 1.2.0

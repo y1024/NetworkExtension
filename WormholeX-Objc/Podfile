@@ -6,6 +6,8 @@ target 'PacketTunnel' do
   # use_frameworks!
 
   # Pods for PacketTunnel
+  
+  pod 'CocoaAsyncSocket', '~> 7.6.1'
 
 end
 
@@ -14,5 +16,6 @@ target 'WormholeX-Objc' do
   # use_frameworks!
 
   # Pods for WormholeX-Objc
+  pod 'ZXingObjC', '~> 3.2.1'
 
 end
